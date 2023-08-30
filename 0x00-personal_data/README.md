@@ -19,7 +19,7 @@ This project contains tasks for learning to protect a user's personal data.
 - How to authenticate to a database using environment variables
 
 ## Tasks To Complete
-+ [x] 1. **Regex-ing**
++ [x] 0. **Regex-ing**
   + [filtered_logger.py](https://github.com/richard-1257/alx-backend-user-data/blob/master/0x00-personal_data/filtered_logger.py) contains a function called `filter_datum` that returns the log message obfuscated with the following requirements:
     + Arguments:
       + `fields`: a list of strings representing all fields to obfuscate.
@@ -28,7 +28,32 @@ This project contains tasks for learning to protect a user's personal data.
       + `separator`: a string representing by which character is separating all fields in the log line (`message`).
     + The function should use a regex to replace occurrences of certain field values.
     + `filter_datum` should be less than 5 lines long and use `re.sub` to perform the substitution with a single regex.
+   
++ [x] 1. **Log formatter**
+  + [filtered_logger.py](https://github.com/richard-1257/alx-backend-user-data/blob/master/0x00-personal_data/filtered_logger.py) contains the following updates:
+    + Copy the following code into [filtered_logger.py]([filtered_logger.py](https://github.com/richard-1257/alx-backend-user-data/blob/master/0x00-personal_data/filtered_logger.py)):
+    ```python
+    import logging
 
 
+    class RedactingFormatter(logging.Formatter):
+    """ Redacting Formatter class
+    """
 
+    REDACTION = "***"
+    FORMAT = "[HOLBERTON] %(name)s %(levelname)s %(asctime)-15s: %(message)s"
+    SEPARATOR = ";"
+
+    def __init__(self):
+        super(RedactingFormatter, self).__init__(self.FORMAT)
+
+    def format(self, record: logging.LogRecord) -> str:
+        raise NotImplementedError
+    ```
+    + Update the class to accept a list of strings `fields` constructor argument.
+      + `redaction`: a string representing by what the field will be obfuscated.
+      + `message`: a string representing the log line.
+      + `separator`: a string representing by which character is separating all fields in the log line (`message`).
+    + The function should use a regex to replace occurrences of certain field values.
+    + `filter_datum` should be less than 5 lines long and use `re.sub` to perform the substitution with a single regex.
 
