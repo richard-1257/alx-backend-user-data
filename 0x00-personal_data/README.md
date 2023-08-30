@@ -3,3 +3,15 @@
 # Personal data
 This project contains tasks for learning to protect a user's personal data.
 `Back-end` `Authentification`
+
+ - By: Emmanuel Turlay, Staff Software Engineer at Cruise
+
+
+
+
+
+
+
+
+
+
