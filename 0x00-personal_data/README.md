@@ -88,5 +88,14 @@ This project contains tasks for learning to protect a user's personal data.
       + password
     + Only your `main` function should run when the module is executed.
 
-
-
++ [x] 5. **Encrypting passwords**</br>
+   [encrypt_password.py](https://github.com/richard-1257/alx-backend-user-data/blob/master/0x00-personal_data/encrypt_password.py) contains a script that meets the following requirements:
+    + **INFO**: User passwords should **NEVER** be stored in plain text in a database.
+    + Implement a `hash_password` function that expects one string argument name password and returns a salted, hashed password, which is a byte string.
+    + Use the `bcrypt` package to perform the hashing (with `hashpw`).
+   
++ [x] 6. **Encrypting passwords**</br>
+   [encrypt_password.py](https://github.com/richard-1257/alx-backend-user-data/blob/master/0x00-personal_data/encrypt_password.py) contains a script that meets the following requirements:
+    + **INFO**: User passwords should **NEVER** be stored in plain text in a database.
+    + Implement a `hash_password` function that expects one string argument name password and returns a salted, hashed password, which is a byte string.
+    + Use the `bcrypt` package to perform the hashing (with `hashpw`).
