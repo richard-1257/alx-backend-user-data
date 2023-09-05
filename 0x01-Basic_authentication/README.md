@@ -22,16 +22,16 @@ In the industry, you should not implement your own Basic authentication system a
 - How to send the Authorization header
 
 ## Tasks To Complete
-+ [x] 0. **Regex-ing**
-  + [filtered_logger.py](https://github.com/richard-1257/alx-backend-user-data/blob/master/0x00-personal_data/filtered_logger.py) contains a function called `filter_datum` that returns the log message obfuscated with the following requirements:
-    + Arguments:
-      + `fields`: a list of strings representing all fields to obfuscate.
-      + `redaction`: a string representing by what the field will be obfuscated.
-      + `message`: a string representing the log line.
-      + `separator`: a string representing by which character is separating all fields in the log line (`message`).
-    + The function should use a regex to replace occurrences of certain field values.
-    + `filter_datum` should be less than 5 lines long and use `re.sub` to perform the substitution with a single regex.
-   
++ [x] 0. **Log parsing**<br/>[0-stats.py](0-stats.py): contains a script that reads `stdin` line by line and computes metrics:
+  + Input format: `<IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>` (if the format is not this one, the line must be skipped).
+  + After every 10 lines and/or a keyboard interruption `(CTRL + C)`, print these statistics from the beginning:
+    + Total file size: `File size: <total size>`.
+    + Where `<total size>` is the sum of all previous `<file size>` (see input format above)
+    + Number of lines by status code:
+      + Possible status code: `200`, `301`, `400`, `401`, `403`, `404`, `405` and `500`.
+      + If a status code doesn’t appear or is not an integer, don’t print anything for this status code.
+      + Format: `<status code>: <number>`.
+      + Status codes should be printed in ascending order. 
 
 
 
