@@ -22,7 +22,8 @@ In the industry, you should not implement your own Basic authentication system a
 - How to send the Authorization header
 
 ## Tasks To Complete
-+ [x] 0. **Simple-basic-API**<br/>Setup and start server:
++ [x] 0. **Simple-basic-API**<br/>
+  + Setup and start server:
 ```python
 bob@dylan:~$ pip3 install -r requirements.txt
 ...
