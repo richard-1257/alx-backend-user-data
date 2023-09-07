@@ -1,6 +1,8 @@
 # Session Authentication
 
 This project contains tasks for learning to authenticate a user through session authentication.
+
+
 **Background Context**
 In this project, you will implement a Session Authentication. You are not allowed to install any other module.
 
