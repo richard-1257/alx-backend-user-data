@@ -9,3 +9,5 @@ This project contains tasks for learning to create a user authentication service
 - pycodestyle 2.5
 - bcrypt
 - python3 3.7
+
+## Tasks To Complete
