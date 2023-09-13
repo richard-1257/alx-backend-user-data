@@ -222,4 +222,3 @@ This project contains tasks for learning to create a user authentication service
         log_in(EMAIL, NEW_PASSWD)
     ```
   + Run `python3 main.py`. If everything is correct, you should see no output.
-root@0e9ea898d087:/alx-backend-user-data/0x03-user_authentication_service#
